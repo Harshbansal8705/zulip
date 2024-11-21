@@ -1195,9 +1195,8 @@ button#register_auth_button_gitlab {
 
 .goto-account-page {
     #realm_redirect_subdomain {
-        text-align: right;
         position: relative;
-        padding-right: 10px;
+        padding-left: 10px;
     }
 
     #realm_redirect_external_host {
