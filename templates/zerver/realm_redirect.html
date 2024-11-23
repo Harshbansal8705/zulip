@@ -28,9 +28,9 @@
                         </div>
                         <div id="errors">
                             {% if form.subdomain.errors %}
-                            {% for error in form.subdomain.errors %}
-                            <div class="alert alert-error">{{ error }}</div>
-                            {% endfor %}
+                                {% for error in form.subdomain.errors %}
+                                <div class="alert alert-error">{{ error }}</div>
+                                {% endfor %}
                             {% endif %}
                         </div>
                         <p class="bottom-text">
