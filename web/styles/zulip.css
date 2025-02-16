@@ -996,6 +996,7 @@ div.focused-message-list.is-conversation-view .recipient_row {
     text-decoration: none;
     color: var(--color-navbar-icon);
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: var(--header-height);
@@ -1036,8 +1037,20 @@ div.focused-message-list.is-conversation-view .recipient_row {
     height: 6px;
     width: 6px;
     background-color: var(--color-navbar-icon);
-    top: 10px;
-    right: 9px;
+
+    /* The toggle icon is half the width of its container
+    and is at the center of the container.
+    So, the left width starts from left 25% of the container
+    and ends till 75% of the container's width.
+    Similarly, vertically, the dot is starts at the top 25% of
+    the container's height and ends at 75% of the total height
+
+    So, the top right corner of the icon is at 25% from top and
+    75% from the right. This is the location where we place the
+    unread indicator dot. */
+    top: 25%;
+    right: 25%;
+
     border: 2px solid var(--color-background-navbar);
     border-radius: 6px;
     padding: 0;
@@ -1067,8 +1080,18 @@ nav {
         }
 
         .left-sidebar-toggle-button .left-sidebar-toggle-unreadcount {
-            top: 10px;
-            left: 21px;
+            /* The toggle icon is half the width of its container
+            and is at the center of the container.
+            So, the left width starts from left 25% of the container
+            and ends till 75% of the container's width.
+            Similarly, vertically, the dot is starts at the top 25% of
+            the container's height and ends at 75% of the total height
+
+            So, the top right corner of the icon is at 25% from top and
+            75% from the right. This is the location where we place the
+            unread indicator dot. */
+            top: 25%;
+            right: 25%;
         }
     }
 
